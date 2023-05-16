@@ -1,3 +1,9 @@
 vim.opt.number = true -- Enable line numbers
 vim.opt.ignorecase = true -- Ignore case sensitivitie when searching
-
+vim.opt.smartcase = true -- Do a case sensitive search when the search text contains capital letters
+vim.opt.lbr = true -- Better line wrap
+vim.opt.ai = true -- Enable auto indent
+vim.opt.si = true -- Enable smart indent
+vim.opt.tabstop = 4 -- Set the number of white spaces 1 tab character is worth to 4
+vim.opt.shiftwidth = 4 -- Set the number of columns 1 indentation level is.
+vim.opt.expandtab = true -- Replaces tabs with spaces
