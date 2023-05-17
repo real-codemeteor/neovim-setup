@@ -7,4 +7,5 @@ vim.opt.si = true -- Enable smart indent
 vim.opt.tabstop = 4 -- Set the number of white spaces 1 tab character is worth to 4
 vim.opt.shiftwidth = 4 -- Set the number of columns 1 indentation level is.
 vim.opt.expandtab = true -- Replaces tabs with spaces
+vim.opt.hidden = true -- Keep buffers in memory 
 vim.opt.scrolloff = 5 -- The numer of lines to keep at the top
