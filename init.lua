@@ -1,2 +1,2 @@
 require("options")
-require("packer")
+require("packer-setup")
