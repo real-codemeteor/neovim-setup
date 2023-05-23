@@ -9,3 +9,6 @@ vim.opt.shiftwidth = 4 -- Set the number of columns 1 indentation level is.
 vim.opt.expandtab = true -- Replaces tabs with spaces
 vim.opt.hidden = true -- Keep buffers in memory 
 vim.opt.scrolloff = 5 -- The numer of lines to keep at the top
+vim.opt.termguicolors = true -- Enable terminal true colors
+vim.opt.background = 'dark' -- Tell vim we are using a dark background
+vim.cmd('colorscheme solarized8') -- Switch to the Solarized 8 colorscheme
