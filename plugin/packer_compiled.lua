@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
+  },
   ["vim-solarized8"] = {
     loaded = true,
     path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-solarized8",

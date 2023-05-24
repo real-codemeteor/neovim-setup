@@ -13,4 +13,9 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- Use the Solarized 8 color theme
     use 'lifepillar/vim-solarized8'
+    -- Add vim-airline
+    use {
+        'vim-airline/vim-airline',
+        requires = 'vim-airline/vim-airline-themes'
+    }
 end)
