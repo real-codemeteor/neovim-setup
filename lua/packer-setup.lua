@@ -18,4 +18,8 @@ return require('packer').startup(function(use)
         'vim-airline/vim-airline',
         requires = 'vim-airline/vim-airline-themes'
     }
+    -- Add telescope and telescope file browser
+    use "nvim-telescope/telescope-file-browser.nvim"
+    use "nvim-telescope/telescope.nvim"
+    use "nvim-lua/plenary.nvim"
 end)
