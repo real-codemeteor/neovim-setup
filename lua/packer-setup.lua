@@ -22,4 +22,6 @@ return require('packer').startup(function(use)
     use "nvim-telescope/telescope-file-browser.nvim"
     use "nvim-telescope/telescope.nvim"
     use "nvim-lua/plenary.nvim"
+    -- Add figitive
+    use "tpope/vim-fugitive"
 end)

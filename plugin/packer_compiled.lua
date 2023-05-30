@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-solarized8"] = {
     loaded = true,
     path = "/home/timdgcb/.local/share/nvim/site/pack/packer/start/vim-solarized8",
