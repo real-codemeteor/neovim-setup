@@ -1,9 +1,26 @@
-local packerPath = vim.fn.expand("~/.local/share/nvim/site/pack/packer/start/packer.nvim")
+-- Check if the current operatingsystem is Windows
+local function is_windows()
+    local sysname = vim.loop.os_uname().sysname:lower()
+    return sysname:find("windows", 1, true) ~= nil 
+end
+
+local function get_nvim_data_path()
+    return vim.fn.stdpath('data')
+end
+
+local packerPath = ""
+
+if is_windows() then
+    packerPath = get_nvim_data_path() .. "\\site\\pack\\packer\\start\\packer.nvim"
+else
+    packerPath = vim.fn.expand("~/.local/share/nvim/site/pack/packer/start/packer.nvim")
+end
+print(packerPath)
+
 local packerRepository = "https://github.com/wbthomason/packer.nvim.git"
 
 if vim.fn.isdirectory(packerPath) == 0 then
     local gitCommand = "git clone " .. packerRepository .. " " .. packerPath
-    vim.fn.system(gitCommand)
 end
 
 vim.cmd [[packadd packer.nvim]]
