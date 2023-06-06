@@ -9,7 +9,11 @@ end
 -- Key bindings for Telescope
 map("n", "<Leader>tf", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
-map("n", "<Leader>tag", ":AdvanceGitSearch<CR>", {silent = true})
+map("n", "<Leader>tag", ":AdvancedGitSearch<CR>", {silent = true})
 
 -- Key bindings Vimspector
 map("n", "<F5>", ":call vimspector#Continue()<CR>")
+map("n", "<F9>", ":call vimspector#ToggleBreakpoint()<CR>")
+map("n", "<F10>", ":call vimspector#StepOver()<CR>")
+map("n", "<F11>", ":call vimspector#StepInto()<CR>")
+map("n", "<C-F11>", ":call vimspector#StepOut()<CR>")
