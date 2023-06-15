@@ -1,7 +1,7 @@
 -- Check if the current operatingsystem is Windows
 local function is_windows()
     local sysname = vim.loop.os_uname().sysname:lower()
-    return sysname:find("windows", 1, true) ~= nil 
+    return sysname:find("windows", 1, true) ~= nil
 end
 
 local function get_nvim_data_path()
@@ -50,27 +50,33 @@ return require('packer').startup(function(use)
         branch = 'v1.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
+            { 'neovim/nvim-lspconfig' },
             {
-              'williamboman/mason.nvim',
-              run = function() pcall(vim.cmd, 'MasonUpdate') end
+                'williamboman/mason.nvim',
+                run = function() pcall(vim.cmd, 'MasonUpdate') end
             },
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     }
 
     -- Install vimspector
     use 'puremourning/vimspector'
+
+
+    -- Install treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter'
+    }
 end)
