@@ -15,16 +15,13 @@ if is_windows() then
 else
     packerPath = vim.fn.expand("~/.local/share/nvim/site/pack/packer/start/packer.nvim")
 end
-print(packerPath)
 
 local packerRepository = "https://github.com/wbthomason/packer.nvim.git"
 
-print(vim.fn.isdirectory(packerPath))
 if vim.fn.isdirectory(packerPath) == 0 then
     local gitCommand = "git clone " .. packerRepository .. " " .. packerPath
     os.execute(gitCommand)
     vim.cmd [[packadd packer.nvim]]
-    vim.cmd [[PackerSync]]
 end
 
 
