@@ -21,9 +21,9 @@ local packerRepository = "https://github.com/wbthomason/packer.nvim.git"
 
 if vim.fn.isdirectory(packerPath) == 0 then
     local gitCommand = "git clone " .. packerRepository .. " " .. packerPath
+    os.execute(gitCommand)
+    vim.cmd [[packadd packer.nvim]]
 end
-
-vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
