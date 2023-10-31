@@ -81,4 +81,7 @@ return require('packer').startup(function(use)
     }
 
     use "jose-elias-alvarez/null-ls.nvim"
+
+    -- Install Codeium
+    use 'Exafunction/codeium.vim'
 end)
