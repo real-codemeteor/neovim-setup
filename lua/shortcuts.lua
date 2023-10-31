@@ -10,6 +10,7 @@ end
 map("n", "<Leader>tf", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
 map("n", "<Leader>tff", ":Telescope find_files<CR>", {silent = true})
+map("n", "<Leader>tb", ":Telescope buffers<CR>", {silent = true})
 map("n", "<Leader>tag", ":AdvancedGitSearch<CR>", {silent = true})
 
 -- Key bindings Vimspector
