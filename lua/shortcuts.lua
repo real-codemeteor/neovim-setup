@@ -24,4 +24,5 @@ map("n", "<SC-F5>", ":call vimspector#Restart()<CR>")
 
 -- Key bindings LSP
 map("n", "<F12>", ":lua vim.lsp.buf.references()<CR>")
-map("n", "<A-f>", ":lua vim.lsp.buf.format()<CR>")
+map("n", "<Leader>lf", ":lua vim.lsp.buf.format()<CR>")
+map("n", "<Leader>le", ":lua vim.diagnostic.open_float({scope=\"line\"})<CR>")
