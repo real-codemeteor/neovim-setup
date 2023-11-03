@@ -9,7 +9,7 @@ end
 -- Key bindings for Telescope
 map("n", "<Leader>tF", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
-map("n", "<Leader>tff", ":Telescope find_files<CR>", {silent = true})
+map("n", "<Leader>tf", ":Telescope find_files<CR>", {silent = true})
 map("n", "<Leader>tb", ":Telescope buffers<CR>", {silent = true})
 map("n", "<Leader>tag", ":AdvancedGitSearch<CR>", {silent = true})
 
@@ -25,6 +25,6 @@ map("n", "<SC-F5>", ":call vimspector#Restart()<CR>")
 map("n", "<F41>", ":call vimspector#Restart()<CR>")
 
 -- Key bindings LSP
-map("n", "<F12>", ":lua vim.lsp.buf.references()<CR>")
+map("n", "<Leader>lr", ":lua vim.lsp.buf.references()<CR>")
 map("n", "<Leader>lf", ":lua vim.lsp.buf.format()<CR>")
 map("n", "<Leader>le", ":lua vim.diagnostic.open_float({scope=\"line\"})<CR>")
