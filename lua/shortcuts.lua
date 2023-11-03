@@ -20,7 +20,9 @@ map("n", "<F10>", ":call vimspector#StepOver()<CR>")
 map("n", "<F11>", ":call vimspector#StepInto()<CR>")
 map("n", "<C-F11>", ":call vimspector#StepOut()<CR>")
 map("n", "<S-F5>", ":call vimspector#Reset()<CR>")
+map("n", "<F17>", ":call vimspector#Reset()<CR>")
 map("n", "<SC-F5>", ":call vimspector#Restart()<CR>")
+map("n", "<F41>", ":call vimspector#Restart()<CR>")
 
 -- Key bindings LSP
 map("n", "<F12>", ":lua vim.lsp.buf.references()<CR>")
