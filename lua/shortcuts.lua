@@ -7,7 +7,7 @@ function map(mode, lhs, rhs, opts)
 end
 
 -- Key bindings for Telescope
-map("n", "<Leader>tf", ":Telescope file_browser<CR>", {silent = true})
+map("n", "<Leader>tF", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
 map("n", "<Leader>tff", ":Telescope find_files<CR>", {silent = true})
 map("n", "<Leader>tb", ":Telescope buffers<CR>", {silent = true})
@@ -21,3 +21,7 @@ map("n", "<F11>", ":call vimspector#StepInto()<CR>")
 map("n", "<C-F11>", ":call vimspector#StepOut()<CR>")
 map("n", "<S-F5>", ":call vimspector#Reset()<CR>")
 map("n", "<SC-F5>", ":call vimspector#Restart()<CR>")
+
+-- Key bindings LSP
+map("n", "<F12>", ":lua vim.lsp.buf.references()<CR>")
+map("n", "<A-f>", ":lua vim.lsp.buf.format()<CR>")
