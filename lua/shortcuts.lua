@@ -29,3 +29,7 @@ map("n", "<F41>", ":call vimspector#Restart()<CR>")
 map("n", "<Leader>lr", ":lua vim.lsp.buf.references()<CR>")
 map("n", "<Leader>lf", ":lua vim.lsp.buf.format()<CR>")
 map("n", "<Leader>le", ":lua vim.diagnostic.open_float({scope=\"line\"})<CR>")
+
+
+-- Codium.ai
+map("i", "<C-Right>", "codeium#Accept()", {silent = true, expr = true})
