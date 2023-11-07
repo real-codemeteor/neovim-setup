@@ -10,7 +10,7 @@ end
 map("n", "<Leader>tF", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
 map("n", "<Leader>tf", ":Telescope find_files<CR>", {silent = true})
-map("n", "<Leader>tb", ":Telescope buffers<CR>", {silent = true})
+map("n", "<Leader>tb", ":lua require('lua/telescope-setup').my_buffer()<CR>")
 map("n", "<Leader>tag", ":AdvancedGitSearch<CR>", {silent = true})
 map("", "<Leader>tgs", ":Telescope grep_string<CR>")
 
