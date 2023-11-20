@@ -10,7 +10,7 @@ end
 map("n", "<Leader>tF", ":Telescope file_browser<CR>", {silent = true})
 map("n", "<Leader>tlg", ":Telescope live_grep<CR>", {silent = true})
 map("n", "<Leader>tf", ":Telescope find_files<CR>", {silent = true})
-map("n", "<Leader>tb", ":lua require('lua/telescope-setup').my_buffer()<CR>")
+map("n", "<Leader>tb", ":lua require('telescope-setup').my_buffer()<CR>")
 map("n", "<Leader>tag", ":AdvancedGitSearch<CR>", {silent = true})
 map("", "<Leader>tgs", ":Telescope grep_string<CR>")
 
@@ -33,3 +33,8 @@ map("n", "<Leader>le", ":lua vim.diagnostic.open_float({scope=\"line\"})<CR>")
 
 -- Codium.ai
 map("i", "<C-Right>", "codeium#Accept()", {silent = true, expr = true})
+
+
+-- Views
+map("", "<Leader>vb", ":lua bottom_terminal()<CR>")
+map("", "<Leader>vs", ":lua single_window()<CR>")
