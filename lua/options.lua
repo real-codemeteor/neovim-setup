@@ -12,6 +12,7 @@ vim.opt.scrolloff = 5 -- The numer of lines to keep at the top
 vim.opt.termguicolors = true -- Enable terminal true colors
 vim.opt.background = 'dark' -- Tell vim we are using a dark background
 vim.opt.cursorline = true -- Hilight the line where the cursor is located
+vim.g.indent_guides_enable_on_vim_startup = 1
 
 -- Switch to the solarized 8 color scheme
 pcall(function()
