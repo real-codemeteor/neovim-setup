@@ -36,5 +36,6 @@ map("i", "<C-Right>", "codeium#Accept()", {silent = true, expr = true})
 
 
 -- Views
+map("", "<Leader>vc", ":lua toggle_contrast()<CR>")
 map("", "<Leader>vb", ":lua bottom_terminal()<CR>")
 map("", "<Leader>vs", ":lua single_window()<CR>")
