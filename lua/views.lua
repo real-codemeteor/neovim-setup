@@ -11,3 +11,13 @@ end
 function single_window()
     vim.cmd("only")
 end
+
+function toggle_contrast()
+    if vim.o.background == 'dark' then
+        vim.o.background = 'light'
+        vim.cmd('colorscheme PaperColor')
+    else
+        vim.o.background = 'dark'
+        vim.api.nvim_command 'colorscheme solarized8'
+    end
+end
