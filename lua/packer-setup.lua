@@ -30,6 +30,8 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     -- Use the Solarized 8 color theme
     use 'lifepillar/vim-solarized8'
+
+    use 'NLKNguyen/papercolor-theme'
     -- Add vim-airline
     use {
         'vim-airline/vim-airline',
@@ -113,4 +115,16 @@ return require('packer').startup(function(use)
 
 
     use 'nathanaelkane/vim-indent-guides'
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+        ft = { "markdown" },
+    })
 end)
